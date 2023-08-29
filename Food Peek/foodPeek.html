@@ -3,34 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FooD PeeK</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins&display=swap');
+    @font-face {
+        font-family: Poppins-luz;
+        src: url(../Fontes/Poppins/Poppins-Light.ttf);
+    }
+
+    @font-face {
+        font-family: Poppins-bold;
+        src: url(../Fontes/Poppins/Poppins-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: Poppins-medio;
+        src: url(../Fontes/Poppins/Poppins-Medium.ttf);
+    }
+
     </style>
+
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Food Peek</h1>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Menu</a>
-            <a href="">Contact</a>
-            <img src="../img/lupa.png" alt="">
-        </nav>
-    </header>
-    <main>
+    <nav>
         <div>
-            <h2>Welcome Food Peek</h2>
-            <p>Different spice for
-            different tastes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis voluptatem iste quidem sunt illo deleniti dolor necessitatibus minima, fugit numquam perferendis qui ex nobis cum consequuntur inventore dolorem soluta.</p>
-            <br>
-            <p>Order yours</p>
+            <h1 id="logo"><strong>F</strong>oo<strong>D</strong> <strong>P</strong>ee<strong>K</strong></h1>
         </div>
-
         <div>
-            <img src="../img/humburguer.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><img src="../img/lupa.png" alt="busca" width="20"></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <span id="welcome-FP"><strong>Welcome FooD PeeK</strong></span>
+            <p id="descrição">Different spices for different tastes</p>
+            <small id="sub-descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            <br>Numquam necessitatibus, maiores possimus sed</small>
+            <a href="#" class="btn">Order yours</a>
+        </article>
+        <div>
+            <img src="../img/humburguer.png" alt="" width="600">
         </div>
     </main>
 </body>
